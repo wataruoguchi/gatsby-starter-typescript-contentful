@@ -11,6 +11,7 @@
     "gatsby-plugin-offline": "^3.0.14",
     "gatsby-plugin-react-helmet": "^3.1.11",
     "gatsby-plugin-sharp": "^2.2.29",
+    "gatsby-plugin-typescript": "^2.1.12",
     "gatsby-source-filesystem": "^2.1.31",
     "gatsby-transformer-sharp": "^2.2.21",
     "prop-types": "^15.7.2",
@@ -19,6 +20,10 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "@types/react": "^16.9.5",
+    "@types/react-helmet": "^5.0.11",
+    "@typescript-eslint/eslint-plugin": "^2.3.3",
+    "@typescript-eslint/parser": "^2.3.3",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-prettier": "^3.1.1",
@@ -30,7 +35,13 @@
     "typescript": "^3.6.4"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "TypeScript",
+    "Template",
+    "husky",
+    "lint-staged",
+    "stylelint",
+    "prettier"
   ],
   "license": "MIT",
   "scripts": {
@@ -39,9 +50,9 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
+    "test": "npm run type-check && echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
     "type-check": "tsc",
-    "lint": "eslint  --ignore-path .gitignore 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint": "eslint --ignore-path .gitignore 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "npm run lint --fix"
   },
   "repository": {
