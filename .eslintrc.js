@@ -3,5 +3,6 @@ module.exports = {
   plugins: ['prettier'],
   rules: {
     'prettier/prettier': ['error'],
+    'react/jsx-one-expression-per-line': false,
   },
 };
