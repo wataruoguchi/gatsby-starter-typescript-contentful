@@ -15,19 +15,14 @@ type metaType = Array<{
   name?: string;
   content: string;
 }>;
-type SeoParamType = {
+type Props = {
   description: string;
   lang: string;
   meta?: metaType;
   title: string;
 };
 
-function SEO({
-  description,
-  lang,
-  meta,
-  title,
-}: SeoParamType): React.ReactElement {
+function SEO({ description, lang, meta, title }: Props) {
   const { site } = useStaticQuery(
     graphql`
       query {
