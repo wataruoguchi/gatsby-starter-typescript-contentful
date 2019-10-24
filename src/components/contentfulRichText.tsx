@@ -29,6 +29,7 @@ const ContentfulRichText = ({ document }: Props) => {
   const options: Options = {
     renderNode: {
       [BLOCKS.EMBEDDED_ASSET]: node => {
+        if (!node.data.target.fields) return;
         const { file, description } = node.data.target.fields;
         const locales = getObjectKeyArray(file);
         return locales.map(locale => (
