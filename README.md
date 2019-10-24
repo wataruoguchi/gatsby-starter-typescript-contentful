@@ -5,12 +5,10 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Gatsby TypeScript Contentful starter
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
-
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+This starter is TypeScript version of the [Gatsby's default starter](https://github.com/gatsbyjs/gatsby-starter-default) with Contentful Integration. I am trying it as simple as possible.
 
 ## 🚀 Quick start
 
@@ -19,20 +17,43 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
     ```shell
+    # install the Gatsby CLI
+    npm install -g gatsby-cli
     # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    gatsby new my-default-starter https://github.com/wataruoguchi/gatsby-starter-typescript-contentful
     ```
 
-1.  **Start developing.**
+1)  **Set up Contentful**
 
-    Navigate into your new site’s directory and start it up.
+    If you're using Contentful for the first time, you can follow steps below. That way, you can display contents without changing `src/pages/blogPosts.tsx`.
+
+    1. Sign up [Contentful](https://www.contentful.com/sign-up/)>
+    1. Create a Space.
+    1. Create a Content model(content type).
+       - The content type name should be `Blog Post` (more specifically, the content type id should be `blogPost`).
+       - It should have following fields:
+         - title (Short text)
+         - body (Rich text)
+    1. Create a content.
+
+1)  **Start developing.**
+
+    Navigate into your new site’s directory, configure and start it up.
 
     ```shell
     cd my-default-starter/
+    cp .env{.default,}
+    ```
+
+    Then update `.env` file. You can get Space ID and access token in Contentful.
+
+    Start it up:
+
+    ```shell
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+1)  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
@@ -47,6 +68,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     .
     ├── node_modules
     ├── src
+    ├── .env.default
     ├── .gitignore
     ├── .prettierrc
     ├── gatsby-browser.js
@@ -62,9 +84,9 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+3.  **`/src/pages/blogPosts.tsx` and `/src/components/contentfulRichText.tsx`**: These are the additional files that the default starter does not have. The component parses Contentful rich text contents, and the page displays contents from Contentful.
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+4.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
 5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
@@ -76,11 +98,27 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+10. **`yarn.lock`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 12. **`README.md`**: A text file containing useful reference information about your project.
+
+13. **`.env.default`**: A template file for `.env`. You are not supposed to update this file but `.env` file.
+
+14. **`.eslintrc.js`**: ESLint config file.
+
+15. **`.huskyrc.js`**: Husky config file.
+
+16. **`.prettierignore`**: This file tells prettier which file it should ignore.
+
+17. **`.prettierrc.js`**: Prettier config file.
+
+18. **`lint-staged.config.js`**: lint-staged config file.
+
+19. **`stylelint.config.js`**: StyleLint config file.
+
+20. **`tsconfig.json`**: TypeScript config file.
 
 ## 🎓 Learning Gatsby
 
