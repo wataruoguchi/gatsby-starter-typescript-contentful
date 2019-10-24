@@ -27,7 +27,7 @@ This starter is TypeScript version of the [Gatsby's default starter](https://git
 
     If you're using Contentful for the first time, you can follow steps below. That way, you can display contents without changing `src/pages/blogPosts.tsx`.
 
-    1. Sign up [Contentful](https://www.contentful.com/sign-up/)>
+    1. Sign up [Contentful](https://www.contentful.com/sign-up/)
     1. Create a Space.
     1. Create a Content model(content type).
        - The content type name should be `Blog Post` (more specifically, the content type id should be `blogPost`).
