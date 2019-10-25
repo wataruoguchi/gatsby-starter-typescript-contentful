@@ -37,14 +37,17 @@ const BlogPosts = ({ data }: Props) => {
     });
   return (
     <Layout>
-      <SEO title="Page three" />
+      <SEO title="Blog Posts" />
       <h1>Blog Posts (source: Contentful)</h1>
       {documents.map(node => {
         return (
-          <>
-            <h2>{node.title}</h2>
-            <ContentfulRichText document={node.json} key={node.id} />
-          </>
+          <div key={node.id}>
+            <h2 key={`${node.id}-title`}>{node.title}</h2>
+            <ContentfulRichText
+              document={node.json}
+              key={`${node.id}-content`}
+            />
+          </div>
         );
       })}
       <Link to="/">Go back to the homepage</Link>
