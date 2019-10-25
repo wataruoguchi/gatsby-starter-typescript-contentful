@@ -1,5 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f23fa703-e16f-4569-b89a-28510e1f6783/deploy-status)](https://app.netlify.com/sites/wataruoguchi-gatsby-starter-typescript-contentful/deploys)
-
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
