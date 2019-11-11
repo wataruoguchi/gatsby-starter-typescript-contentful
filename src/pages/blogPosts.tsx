@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Link, graphql } from 'gatsby';
-
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import ContentfulRichText from '../components/contentfulRichText';
@@ -23,7 +22,7 @@ type Props = {
   };
 };
 
-const BlogPosts = ({ data }: Props) => {
+const BlogPosts: React.FC<Props> = ({ data }: Props) => {
   const documents: {
     id: string;
     title: string;

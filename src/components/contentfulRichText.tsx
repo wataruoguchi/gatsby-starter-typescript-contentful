@@ -25,7 +25,7 @@ function getObjectKeyArray(obj: any): string[] {
   return arr;
 }
 
-const ContentfulRichText = ({ document }: Props) => {
+const ContentfulRichText: React.FC<Props> = ({ document }: Props) => {
   const options: Options = {
     renderNode: {
       [BLOCKS.EMBEDDED_ASSET]: node => {
