@@ -57,7 +57,7 @@
     "serve": "gatsby serve",
     "test": "npm run type-check && echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
     "type-check": "tsc",
-    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint": "eslint --ignore-path .gitignore 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "npm run lint --fix"
   },
   "repository": {
