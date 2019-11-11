@@ -3,35 +3,18 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import ContentfulRichText from '../components/contentfulRichText';
-
-type ContentfulNode = {
-  node: {
-    id: string;
-    title: string;
-    body: {
-      json: any;
-    };
-  };
-};
+import { BlogPagesQueryQuery } from '../../types/graphql-types'; // eslint-disable-line import/no-unresolved
 
 type Props = {
-  data: {
-    allContentfulBlogPost: {
-      edges: ContentfulNode[];
-    };
-  };
+  data: BlogPagesQueryQuery;
 };
 
 const BlogPosts: React.FC<Props> = ({ data }: Props) => {
-  const documents: {
-    id: string;
-    title: string;
-    json: any;
-  }[] = data.allContentfulBlogPost.edges
+  const documents = data.allContentfulBlogPost.edges
     .filter(edge => edge.node.body)
     .map(edge => {
       const { id, title } = edge.node;
-      const { json } = edge.node.body;
+      const { json } = edge.node.body || { json: {} };
       return { id, title, json };
     });
   return (

@@ -2,7 +2,7 @@
   "name": "gatsby-starter-typescript",
   "private": true,
   "description": "A TypeScript version starter to get up and developing quickly with Gatsby",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "author": "Wataru Oguchi <wataru.oguchi.0to1@gmail.com>",
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^13.4.0",
