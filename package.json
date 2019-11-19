@@ -10,7 +10,7 @@
     "@types/react": "^16.9.5",
     "@types/react-helmet": "^5.0.11",
     "dotenv": "^8.2.0",
-    "gatsby": "^2.15.35",
+    "gatsby": "^2.17.17",
     "gatsby-image": "^2.2.27",
     "gatsby-plugin-graphql-codegen": "^2.0.1",
     "gatsby-plugin-manifest": "^2.2.21",
