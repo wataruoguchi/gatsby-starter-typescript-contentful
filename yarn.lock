@@ -6187,10 +6187,10 @@ gatsby-page-utils@^0.0.33:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-graphql-codegen@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-graphql-codegen/-/gatsby-plugin-graphql-codegen-2.0.1.tgz#fd9140e65c76e01009cd25b29df3b5335c7936e3"
-  integrity sha512-AVNzb5EhPP7kjSIpr8qoEitp66IKbSVMHA4P7FHF/8eF6ZELZNP/uTpVc712HYaOMi9/+eh6brMQNMW7ugEVyQ==
+gatsby-plugin-graphql-codegen@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-graphql-codegen/-/gatsby-plugin-graphql-codegen-2.1.1.tgz#2b94fd02e47c4f4836eff70923fdf2b077dc68b1"
+  integrity sha512-XRJWW73Vkhj9luHZ2sus01YJpjSlW/SrjeYhjYBDh5AXoWlVpnzexAl6pm84pH0q7P8B0+fD9AbBqfx5smOQVA==
   dependencies:
     "@graphql-codegen/core" "^1.4.0"
     "@graphql-codegen/typescript" "^1.4.0"
