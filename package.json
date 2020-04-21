@@ -12,7 +12,7 @@
     "dotenv": "^8.2.0",
     "gatsby": "^2.18.8",
     "gatsby-image": "^2.2.27",
-    "gatsby-plugin-graphql-codegen": "^2.0.1",
+    "gatsby-plugin-graphql-codegen": "^2.2.2",
     "gatsby-plugin-manifest": "^2.2.21",
     "gatsby-plugin-offline": "^3.0.31",
     "gatsby-plugin-react-helmet": "^3.1.11",
