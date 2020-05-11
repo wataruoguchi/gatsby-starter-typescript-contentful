@@ -6955,15 +6955,15 @@ gatsby-plugin-graphql-codegen@^2.2.2:
     graphql-tag-pluck "^0.8.7"
     lodash.debounce "^4.0.8"
 
-gatsby-plugin-manifest@^2.2.21:
-  version "2.2.21"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.21.tgz#3be76247d2f652fd17a8706fd040955201c21e70"
-  integrity sha512-1q54c4AVA3IWF/oo9RbyWwiAjl5Q0t0wAEDncnNQ44amrOno1I5TDcX7uuQH5iMMIfSm6iv1fia9KcWw1/rv5g==
+gatsby-plugin-manifest@^2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.4.2.tgz#0a9605a778a8e30ce047b9b3701031b9bde61d6b"
+  integrity sha512-G6MB1/Me4waG/z3Aj1GEqXCfY/yftyMLKp8g83uGvuBDtgLGN5unVgYqdmKAyBFQTvczsUghZ7jBrApHeaTn4w==
   dependencies:
-    "@babel/runtime" "^7.6.3"
-    gatsby-core-utils "^1.0.13"
+    "@babel/runtime" "^7.9.6"
+    gatsby-core-utils "^1.2.1"
     semver "^5.7.1"
-    sharp "^0.23.1"
+    sharp "^0.25.1"
 
 gatsby-plugin-offline@^3.0.31:
   version "3.0.31"
@@ -12343,11 +12343,6 @@ prettier-linter-helpers@^1.0.0:
   integrity sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==
   dependencies:
     fast-diff "^1.1.2"
-
-prettier@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.5.tgz#d6d56282455243f2f92cc1716692c08aa31522d4"
-  integrity sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
 
 prettier@^2.0.5:
   version "2.0.5"
