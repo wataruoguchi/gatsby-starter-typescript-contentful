@@ -15,7 +15,7 @@
     "gatsby-plugin-graphql-codegen": "^2.2.3",
     "gatsby-plugin-manifest": "^2.2.21",
     "gatsby-plugin-offline": "^3.2.7",
-    "gatsby-plugin-react-helmet": "^3.3.2",
+    "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sharp": "^2.2.29",
     "gatsby-plugin-typescript": "^2.4.3",
     "gatsby-source-contentful": "^2.1.50",
